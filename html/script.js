@@ -2799,7 +2799,7 @@ function initMap() {
     // always hide this, it really only shows the number of positions saved
     jQuery('#dump1090_total_history_td').hide();
 
-    if (globeIndex && aggregator) {
+    if ((globeIndex && aggregator) || filterUuid) {
         jQuery('#dump1090_message_rate_td').hide();
     }
 
